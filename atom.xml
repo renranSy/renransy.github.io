@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://renransy.github.io</id>
+    <title>荏苒</title>
+    <updated>2023-09-12T07:18:10.136Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://renransy.github.io"/>
+    <link rel="self" href="https://renransy.github.io/atom.xml"/>
+    <subtitle>世界睡了🌙，故事醒着、</subtitle>
+    <logo>https://renransy.github.io/images/avatar.png</logo>
+    <icon>https://renransy.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 荏苒</rights>
+    <entry>
+        <title type="html"><![CDATA[如何优雅✨的创建一个React项目（React + Vite + TypeScript +Prettier + Eslint）]]></title>
+        <id>https://renransy.github.io/post/ru-he-you-ya-de-chuang-jian-yi-ge-react-xiang-mu-react-vite-typescript-prettier-eslint/</id>
+        <link href="https://renransy.github.io/post/ru-he-you-ya-de-chuang-jian-yi-ge-react-xiang-mu-react-vite-typescript-prettier-eslint/">
+        </link>
+        <updated>2023-09-12T03:58:38.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>在2023年的那个秋天，夏天的遗憾与秋天落叶🍂一起飘落，我创建了一个新的React项目......</p>
+</blockquote>
+<h2 id="使用vite初始化项目">😀 使用Vite初始化项目</h2>
+<p><code>npm init vite</code><br>
+<img src="https://renransy.github.io/post-images/1694492138277.png" alt="" loading="lazy"></p>
+<h2 id="安装prettier">😋 安装Prettier</h2>
+<p><code>yarn add -D prettier</code><br>
+<code>yarn add -D eslint-config-prettier</code><br>
+<code>yarn add -D eslint-plugin-prettier</code></p>
+<p>在根目录新建 <code>.prettierrc.cjs</code> 文件</p>
+<pre><code class="language-javascript">module.exports = {
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  semi: false,
+  singleQuote: true,
+  jsxSingleQuote: false,
+  jsxBracketSameLine: true,
+  trailingComma: 'none',
+  bracketSpacing: true
+}
+</code></pre>
+<h2 id="安装eslint">🧐 安装Eslint</h2>
+<h3 id="1-安装依赖">1、安装依赖</h3>
+<p><code>yarn add -D eslint</code></p>
+<h3 id="2-初始化eslint配置">2、初始化Eslint配置</h3>
+<p><code>npx eslint --init</code><br>
+<img src="https://renransy.github.io/post-images/1694492807546.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492914500.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492959255.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492993314.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493041898.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493073885.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493165290.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694498998504.png" alt="" loading="lazy"><br>
+一波操作之后，你会发现在项目根目录会生成一个 <code>.eslintrc.cjs</code> 文件</p>
+<pre><code class="language-javascript">module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es2021: true
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'eslint-config-prettier'
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  plugins: ['prettier', 'react', 'eslint-plugin-prettier'],
+  rules: {
+    'prettier/prettier': 'warn',
+    '@typescript-eslint/no-explicit-any': ['off']
+  }
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[md-editor-v3]]></title>
+        <id>https://renransy.github.io/post/md-editor-v3/</id>
+        <link href="https://renransy.github.io/post/md-editor-v3/">
+        </link>
+        <updated>2023-09-04T00:48:59.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="md-editor-v3">😲 md-editor-v3</h2>
+<p>Markdown Editor for Vue3, developed in jsx and typescript, support different themes、beautify content by prettier.</p>
+<h3 id="base">🤖 Base</h3>
+<p><strong>bold</strong>, <u>underline</u>, <em>italic</em>, <s>line-through</s>, superscript<sup>26</sup>, subscript<sub>1</sub>, <code>inline code</code>, <a href="https://imzbf.cc">link</a></p>
+<blockquote>
+<p>quote: I Have a Dream</p>
+</blockquote>
+<ol>
+<li>So even though we face the difficulties of today and tomorrow, I still have a dream.</li>
+<li>It is a dream deeply rooted in the American dream.</li>
+<li>I have a dream that one day this nation will rise up.</li>
+</ol>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3622730"><label class="task-list-item-label" for="task-item-3622730"> Friday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6459467"><label class="task-list-item-label" for="task-item-6459467"> Saturday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-339933"><label class="task-list-item-label" for="task-item-339933"> Sunday</label></li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif" alt="Picture" loading="lazy"></figure>
+<h2 id="code">🤗 Code</h2>
+<pre><code>&lt;template&gt;
+  &lt;MdEditor v-model=&quot;text&quot; /&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref } from 'vue';
+import { MdEditor } from 'md-editor-v3';
+import 'md-editor-v3/lib/style.css';
+
+const text = ref('Hello Editor!');
+&lt;/script&gt;
+</code></pre>
+<pre><code class="language-c">int main() {
+    print(&quot;Hello world!&quot;);
+    return 0;
+}
+</code></pre>
+<h2 id="text">🖨 Text</h2>
+<p>The Old Man and the Sea served to reinvigorate Hemingway's literary reputation and prompted a reexamination of his entire body of work.</p>
+<h2 id="table">📈 Table</h2>
+<table>
+<thead>
+<tr>
+<th>nickname</th>
+<th>from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zhijian</td>
+<td>ChongQing, China</td>
+</tr>
+</tbody>
+</table>
+<h2 id="formula">📏 Formula</h2>
+<p>Inline: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>+</mo><msup><mi>y</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">x+y^{2x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mroot><mi>x</mi><mn>3</mn></mroot></mrow><annotation encoding="application/x-tex">\sqrt[3]{x}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.190845em;"></span><span class="mord sqrt"><span class="root"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7172060000000001em;"><span style="top:-2.8949860000000003em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size6 size1 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8491550000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathdefault">x</span></span></span><span style="top:-2.809155em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.190845em;"><span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="diagram">🧬 Diagram</h2>
+<pre><code class="language-mermaid">flowchart TD
+  Start --&gt; Stop
+</code></pre>
+<h2 id="alert">🪄 Alert</h2>
+<p>!!! note Supported Types</p>
+<p>note、abstract、info、tip、success、question、warning、failure、danger、bug、example、quote、hint、caution、error、attention</p>
+<p>!!!</p>
+<h2 id="️-em">☘️ em...</h2>
+]]></content>
+    </entry>
+</feed>

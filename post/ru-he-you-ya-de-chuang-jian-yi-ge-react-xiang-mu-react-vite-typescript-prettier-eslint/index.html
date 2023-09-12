@@ -1,0 +1,267 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>如何优雅✨的创建一个React项目（React + Vite + TypeScript +Prettier + Eslint） | 荏苒</title>
+<link rel="shortcut icon" href="https://renransy.github.io/favicon.ico?v=1694503087469">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://renransy.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="如何优雅✨的创建一个React项目（React + Vite + TypeScript +Prettier + Eslint） | 荏苒 - Atom Feed" href="https://renransy.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+在2023年的那个秋天，夏天的遗憾与秋天落叶🍂一起飘落，我创建了一个新的React项目......
+
+😀 使用Vite初始化项目
+npm init vite
+
+😋 安装Prettier
+yarn add -D prettier
+ya..." />
+    <meta name="keywords" content="React,Vite,前端" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://renransy.github.io">
+  <img class="avatar" src="https://renransy.github.io/images/avatar.png?v=1694503087469" alt="">
+  </a>
+  <h1 class="site-title">
+    荏苒
+  </h1>
+  <p class="site-description">
+    世界睡了🌙，故事醒着、
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/renranSy" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              如何优雅✨的创建一个React项目（React + Vite + TypeScript +Prettier + Eslint）
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-09-12
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://renransy.github.io/tag/TkajptsIP/" class="post-tag">
+                  # React
+                </a>
+              
+                <a href="https://renransy.github.io/tag/hxcqQsNgx/" class="post-tag">
+                  # Vite
+                </a>
+              
+                <a href="https://renransy.github.io/tag/LpicfiSHe/" class="post-tag">
+                  # 前端
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <blockquote>
+<p>在2023年的那个秋天，夏天的遗憾与秋天落叶🍂一起飘落，我创建了一个新的React项目......</p>
+</blockquote>
+<h2 id="使用vite初始化项目">😀 使用Vite初始化项目</h2>
+<p><code>npm init vite</code><br>
+<img src="https://renransy.github.io/post-images/1694492138277.png" alt="" loading="lazy"></p>
+<h2 id="安装prettier">😋 安装Prettier</h2>
+<p><code>yarn add -D prettier</code><br>
+<code>yarn add -D eslint-config-prettier</code><br>
+<code>yarn add -D eslint-plugin-prettier</code></p>
+<p>在根目录新建 <code>.prettierrc.cjs</code> 文件</p>
+<pre><code class="language-javascript">module.exports = {
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  semi: false,
+  singleQuote: true,
+  jsxSingleQuote: false,
+  jsxBracketSameLine: true,
+  trailingComma: 'none',
+  bracketSpacing: true
+}
+</code></pre>
+<h2 id="安装eslint">🧐 安装Eslint</h2>
+<h3 id="1-安装依赖">1、安装依赖</h3>
+<p><code>yarn add -D eslint</code></p>
+<h3 id="2-初始化eslint配置">2、初始化Eslint配置</h3>
+<p><code>npx eslint --init</code><br>
+<img src="https://renransy.github.io/post-images/1694492807546.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492914500.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492959255.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694492993314.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493041898.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493073885.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694493165290.png" alt="" loading="lazy"><br>
+<img src="https://renransy.github.io/post-images/1694498998504.png" alt="" loading="lazy"><br>
+一波操作之后，你会发现在项目根目录会生成一个 <code>.eslintrc.cjs</code> 文件</p>
+<pre><code class="language-javascript">module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es2021: true
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'eslint-config-prettier'
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  plugins: ['prettier', 'react', 'eslint-plugin-prettier'],
+  rules: {
+    'prettier/prettier': 'warn',
+    '@typescript-eslint/no-explicit-any': ['off']
+  }
+}
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BD%BF%E7%94%A8vite%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE">😀 使用Vite初始化项目</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85prettier">😋 安装Prettier</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85eslint">🧐 安装Eslint</a>
+<ul>
+<li><a href="#1-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96">1、安装依赖</a></li>
+<li><a href="#2-%E5%88%9D%E5%A7%8B%E5%8C%96eslint%E9%85%8D%E7%BD%AE">2、初始化Eslint配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://renransy.github.io/post/md-editor-v3/">
+              <h3 class="post-title">
+                md-editor-v3
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://renransy.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
